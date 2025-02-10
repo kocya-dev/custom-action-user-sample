@@ -1,12 +1,7 @@
 name: Continuous Integration
 
 on:
-  pull_request:
-    branches:
-      - main
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -27,4 +22,7 @@ jobs:
         with:
           token: GITHUB_TOKEN
           webhook-url: 'https://example.com'
-          message: 'Your message here'
+          message1: 'test1'
+          message2: 'test2'
+          action-titles: 'title1'
+          action-urls: 'https://www.yahoo.co.jp/'

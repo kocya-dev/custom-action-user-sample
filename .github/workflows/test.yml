@@ -20,9 +20,8 @@ jobs:
         id: test-action
         uses: kocya-dev/custom-action-sample@main
         with:
-          token: GITHUB_TOKEN
           webhook-url: 'https://example.com'
-          message1: 'test1'
-          message2: 'test2'
+          message1: 'test1 msg'
+          message2: 'test2 msg'
           action-titles: 'title1'
           action-urls: 'https://www.yahoo.co.jp/'

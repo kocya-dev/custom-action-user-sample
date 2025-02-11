@@ -20,6 +20,6 @@ jobs:
         id: test-action
         uses: kocya-dev/custom-action-sample@v1
         with:
-          webhook-url: 'https://example.com'
+          webhook-url: ${{ secrets.TEST_URL }}
           message1: 'test1 msg'
           message2: 'test2 msg'

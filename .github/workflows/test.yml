@@ -18,10 +18,8 @@ jobs:
 
       - name: Test Local Action
         id: test-action
-        uses: kocya-dev/custom-action-sample@main
+        uses: kocya-dev/custom-action-sample@v1
         with:
           webhook-url: 'https://example.com'
           message1: 'test1 msg'
           message2: 'test2 msg'
-          action-titles: 'title1'
-          action-urls: 'https://www.yahoo.co.jp/'
